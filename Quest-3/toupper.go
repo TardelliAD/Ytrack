@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func ToUpper(s string) string {
+	var phrase string
+	for _, letter := range s {
+		if letter >= 'a' && letter <= 'z' {
+			phrase += string(letter - 32)
+		} else {
+			phrase += string(letter)
+		}
+	}
+	return phrase
+}
+func main() {
+	fmt.Println(ToUpper("Hello! How are you?"))
+}

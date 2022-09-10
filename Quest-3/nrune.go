@@ -1,5 +1,3 @@
-// Write a function that returns the nth rune of a string. If not possible, it returns 0.
-
 package main
 
 import (

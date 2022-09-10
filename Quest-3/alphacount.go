@@ -1,5 +1,3 @@
-// Write a function that counts the letters of a string and returns the count.
-
 package main
 
 import "fmt"

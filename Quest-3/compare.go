@@ -1,5 +1,3 @@
-//Write a function that behaves like the Compare function
-
 package main
 
 import "fmt"
