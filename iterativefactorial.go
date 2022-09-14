@@ -1,0 +1,13 @@
+package piscine
+
+import "fmt"
+
+func IterativeFactorial(nb int) int {
+	result := 1
+	for i := 1; i < nb+1; i++ {
+		result = result * i
+
+	}
+	fmt.Println(result)
+	return result
+}
