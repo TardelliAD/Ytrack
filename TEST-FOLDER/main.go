@@ -2,12 +2,22 @@ package main
 
 import (
 	"fmt"
-	"piscine"
 )
 
-func main() {
-	result := []string{"a", "A", "1", "b", "B", "2", "c", "C", "3"}
-	piscine.SortWordArr(result)
+type eleve struct {
+	nom string
+	age int
+}
 
-	fmt.Println(result)
+func (s *eleve) Init(nom string, age int) {
+	s.nom = nom
+	s.age = age
+}
+func (s eleve) Affichage() {
+	fmt.Println("nom:", s.nom, "\nage:", s.age)
+}
+func main() {
+	var s1 eleve
+	s1.Init("andrea", 17)
+	s1.Affichage()
 }
